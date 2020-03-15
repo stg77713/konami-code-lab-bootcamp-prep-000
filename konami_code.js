@@ -28,4 +28,4 @@ function init() {
   });
 }
 
-init()
+init();
