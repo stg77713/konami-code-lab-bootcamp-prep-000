@@ -12,18 +12,20 @@ const codes = [
 ];
 
 function init() {
-  // your code here
-  let index = 0;
-  // Attaching a keydown event listener to document.body
+  let idx = 0
+
   document.body.addEventListener("keydown", (e) => {
-    const key = e.key;
-    
-    index = (codes[index] === key) > ++index : 0
-    
-    if (index === codes.length) {
+    const key = e.key
+
+    idx = (codes[idx] === key) ? ++idx : 0
+
+
+    if (idx === codes.length) {
       window.alert("Hurray!");
-      index = 0
+      idx = 0
     }
+
   });
 }
-init();
+
+init()
